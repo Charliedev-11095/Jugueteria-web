@@ -1,0 +1,701 @@
+{% extends "proye/plantilla.html"%} 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {%block titulo%}TituloIndex{% endblock %}
+</head>
+<body>
+{%block rutalogo%}static/proye/images/logos/logo.png{%endblock%}
+{%block rutaads%}static/proye/images/news/ad-pro.png{%endblock%}
+{%block body%} 
+
+<div class="py-30"></div>
+    <section class="block-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="news-style-one">
+              <h3 class="news-title">
+                <span>Productos destacados</span>
+              </h3>
+              <div class="news-style-one-slide">
+                <div class="item">
+                  <div class="post-block-wrapper clearfix mb-5">
+                    <div class="post-thumbnail">
+                      <a href="{%url 'Producto'%}">
+                        <img
+                          class="img-fluid"
+                          src="static/proye/images/news/rubik.jpg"
+                          alt="post-image"
+                        />
+                      </a>
+                    </div>
+                    <div class="post-content">
+                      <h2 class="post-title mt-3">
+                        <a href="{%url 'Producto'%}"
+                          >PRODUCTO DESTACADO 1 :Rubik</a
+                        >
+                      </h2>
+                      <div class="post-meta mb-2">
+                        <span class="posted-time"
+                          ><i class="fa mr-2"></i>Hasbro</span
+                        >
+                        <span class="post-author">
+                            Puzzle
+                        </span>
+                      </div>
+                      <p>
+                        El Cubo de Rubik es un rompecabezas mecánico tridimensional creado por el escultor 
+                        y profesor de arquitectura húngaro Ernő Rubik en 1974
+                        , primo de Juan Rubik, del que tomó la idea.​​
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="post-block-wrapper clearfix mb-5">
+                    <div class="post-thumbnail">
+                      <a href="{%url 'Producto'%}">
+                        <img
+                          class="img-fluid"
+                          src="static/proye/images/news/ajedrez.jpg"
+                          alt="post-thumbnail"
+                        />
+                      </a>
+                    </div>
+                    <div class="post-content">
+                      <h2 class="post-title">
+                        <a href="{%url 'Producto'%}"
+                          >PRODUCTO DESTACADO 2:Ajedrez</a
+                        >
+                      </h2>
+                      <div class="post-meta mb-2">
+                        <span class="posted-time"
+                          ><i class="fa mr-2"></i>Universal</span
+                        >
+                        <span class="post-author">
+                          Juegos de mesa
+                        </span>
+                      </div>
+                      <p>
+                        Juego de mesa en el que se enfrentan dos jugadores, cada uno de los cuales tiene 16 piezas de valores diversos que puede mover, 
+                        según ciertas reglas, sobre un tablero dividido en 64 cuadros alternativamente blancos y negros; 
+                        gana el jugador que consigue dar mate al rey de su contrincante.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="post-block-wrapper clearfix mb-5">
+                    <div class="post-thumbnail">
+                      <a href="{%url 'Producto'%}">
+                        <img
+                          class="img-fluid"
+                          src="static/proye/images/news/marimba.jpg"
+                          alt="post-thumbnail"
+                        />
+                      </a>
+                    </div>
+                    <div class="post-content">
+                      <h2 class="post-title">
+                        <a href="{%url 'Producto'%}"
+                          >PRODUCTO DESTACADO 3 : Marimba Infantil</a
+                        >
+                      </h2>
+                      <div class="post-meta mb-2">
+                        <span class="posted-time"
+                          ><i class="fa mr-2"></i>Fisherprice</span
+                        >
+                        <span class="post-author">
+                            Motrices
+                        </span>
+                      </div>
+                      <p>
+                       marimba para desarrollar la capacidad motriz en bebes
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                    <div class="post-block-wrapper clearfix mb-5">
+                      <div class="post-thumbnail">
+                        <a href="{%url 'Producto'%}">
+                          <img
+                            class="img-fluid"
+                            src="static/proye/images/news/fidgetcube.jpg"
+                            alt="post-thumbnail"
+                          />
+                        </a>
+                      </div>
+                      <div class="post-content">
+                        <h2 class="post-title">
+                          <a href="{%url 'Producto'%}"
+                            >PRODUCTO DESTACADO 4: FidgetCube</a
+                          >
+                        </h2>
+                        <div class="post-meta mb-2">
+                          <span class="posted-time"
+                            ><i class="fa mr-2"></i>Blanca</span
+                          >
+                          <span class="post-author">
+                            FidgetToys
+                          </span>
+                        </div>
+                        <p>
+                          El Fidget Cube es un pequeño dispositivo portátil diseñado por Matthew y Mark McLachlan
+                          , hermanos y cofundadores del estudio de diseño con sede en Colorado Antsy Labs.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-style-four bg-light section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="block">
+              <h3 class="news-title">
+                <span>FidgetToys</span>
+              </h3>
+              <div class="post-overlay-wrapper clearfix">
+                <div class="post-thumbnail">
+                  <img
+                    class="img-fluid"
+                    src="static/proye/images/news/fidgetcube.jpg"
+                    alt="post-thumbnail"
+                  />
+                </div>
+
+                <div class="post-content">
+                  <h2 class="post-title">
+                    <a href="{%url 'Producto'%}"
+                      >FidgetCube</a
+                    >
+                  </h2>
+                  <div class="post-meta white">
+                    <span class="posted-time">Blanca</span>
+                    <span class="pull-right">
+                      <i class="fa fa-comments"></i>
+                      <a href="single-post.html#comments">05</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post-list-block">
+                <div class="post-block-wrapper post-float clearfix">
+                  <div class="post-thumbnail">
+                    <img
+                      class="img-fluid"
+                      src="static/proye/images/news/fidgetspiner.jpg"
+                      alt="post-thumbnail"
+                    />
+                  </div>
+
+                  <div class="post-content">
+                    <h2 class="post-title title-sm">
+                      <a href="{%url 'Producto'%}">FidgetSpinner</a>
+                    </h2>
+                    <div class="post-meta">
+                      <span class="posted-time">Blanca</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post-block-wrapper post-float clearfix">
+                  <div class="post-thumbnail">
+                    <img
+                      class="img-fluid"
+                      src="static/proye/images/news/anillos.jpg"
+                      alt="post-thumbnail"
+                    />
+                  </div>
+                  <div class="post-content">
+                    <h2 class="post-title title-sm">
+                      <a href="{%url 'Producto'%}"
+                        >FidgetPuzzle</a
+                      >
+                    </h2>
+                    <div class="post-meta">
+                      <span class="posted-time">Blanca</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post-block-wrapper post-float clearfix">
+                  <div class="post-thumbnail">
+                    <img
+                      class="img-fluid"
+                      src="static/proye/images/news/popers.jpg"
+                      alt="post-thumbnail"
+                    />
+                  </div>
+
+                  <div class="post-content">
+                    <h2 class="post-title title-sm">
+                      <a href="{%url 'Producto'%}"
+                        >FidgetPopeer</a
+                      >
+                    </h2>
+                    <div class="post-meta">
+                      <span class="posted-time">Blanca</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="block">
+              <h3 class="news-title">
+                <span>Puzzle</span>
+              </h3>
+              <div class="post-overlay-wrapper clearfix">
+                <div class="post-thumbnail">
+                  <img
+                    class="img-fluid"
+                    src="static/proye/images/news/rompecabeza.jpg"
+                    alt="post-thumbnail"
+                  />
+                </div>
+
+                <div class="post-content">
+                  <h2 class="post-title">
+                    <a href="{%url 'Producto'%}">Rompecabezas Clasicas</a>
+                  </h2>
+                  <div class="post-meta white">
+                    <span class="posted-time">Blanca</span>
+                    </span>
+                    <span class="pull-right">
+                      <i class="fa fa-comments"></i>
+                      <a href="single-post.html#comments">10</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post-list-block">
+                <div class="post-block-wrapper post-float clearfix">
+                  <div class="post-thumbnail">
+                    <img
+                      class="img-fluid"
+                      src="static/proye/images/news/madera.jpg"
+                      alt="post-thumbnail"
+                    />
+                  </div>
+
+                  <div class="post-content">
+                    <h2 class="post-title title-sm">
+                      <a href="{%url 'Producto'%}"
+                        >Rompecabezas de madera</a
+                      >
+                    </h2>
+                    <div class="post-meta">
+                      <span class="posted-time">Ikea</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post-block-wrapper post-float clearfix">
+                  <div class="post-thumbnail">
+                    <img
+                      class="img-fluid"
+                      src="static/proye/images/news/anillos.jpg"
+                      alt="post-thumbnail"
+                    />
+                  </div>
+
+                  <div class="post-content">
+                    <h2 class="post-title title-sm">
+                      <a href="{%url 'Producto'%}"
+                        >Anillos magicos</a
+                      >
+                    </h2>
+                    <div class="post-meta">
+                      <span class="posted-time">Wizards</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post-block-wrapper post-float clearfix">
+                  <div class="post-thumbnail">
+                    <img
+                      class="img-fluid"
+                      src="static/proye/images/news/rubik.jpg"
+                      alt="post-thumbnail"
+                    />
+                  </div>
+
+                  <div class="post-content">
+                    <h2 class="post-title title-sm">
+                      <a href="{%url 'Producto'%}"
+                        >Cubo Rubik</a
+                      >
+                    </h2>
+                    <div class="post-meta">
+                      <span class="posted-time">Hasbro</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="block">
+              <h3 class="news-title">
+                <span>Desarrollo motriz</span>
+              </h3>
+              <div class="post-overlay-wrapper clearfix">
+                <div class="post-thumbnail">
+                  <img
+                    class="img-fluid"
+                    src="static/proye/images/news/marimba.jpg"
+                    alt="post-thumbnail"
+                  />
+                </div>
+
+                <div class="post-content">
+                  <h2 class="post-title">
+                    <a href="{%url 'Producto'%}"
+                      >Marimba Para Bebes</a
+                    >
+                  </h2>
+                  <div class="post-meta white">
+                    <span class="posted-time">Fisherprice</span>
+                    <span class="pull-right">
+                      <i class="fa fa-comments"></i>
+                      <a href="single-post.html#comments">30</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post-list-block">
+                <div class="post-block-wrapper post-float clearfix">
+                  <div class="post-thumbnail">
+                    <img
+                      class="img-fluid"
+                      src="static/proye/images/news/gusanito.jpg"
+                      alt="post-thumbnail"
+                    />
+                  </div>
+
+                  <div class="post-content">
+                    <h2 class="post-title title-sm">
+                      <a href="{%url 'Producto'%}"
+                        >buggy dancer</a>
+                    </h2>
+                    <div class="post-meta">
+                      <span class="posted-time">Fisherprice</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post-block-wrapper post-float clearfix">
+                  <div class="post-thumbnail">
+                    <img
+                      class="img-fluid"
+                      src="static/proye/images/news/perrito.jpg"
+                      alt="post-thumbnail"
+                    />
+                  </div>
+
+                  <div class="post-content">
+                    <h2 class="post-title title-sm">
+                      <a href="{%url 'Producto'%}"
+                        >Perrito Camina Conmigo</a
+                      >
+                    </h2>
+                    <div class="post-meta">
+                      <span class="posted-time">Fisherprice</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="post-block-wrapper post-float clearfix">
+                  <div class="post-thumbnail">
+                    <img
+                      class="img-fluid"
+                      src="static/proye/images/news/potatoe.jpg"
+                      alt="post-thumbnail"
+                    />
+                  </div>
+
+                  <div class="post-content">
+                    <h2 class="post-title title-sm">
+                      <a href="{%url 'Producto'%}"
+                        >Mr. PotatoHead</a>
+                    </h2>
+                    <div class="post-meta">
+                      <span class="posted-time">Mattel</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+            <section class="news-style-four bg-light section-padding">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                    <div class="block">
+                      <h3 class="news-title">
+                        <span>Mejores marcas:</span>
+                      </h3>
+
+                      <div class="post-list-block">
+                        <div class="post-block-wrapper post-float clearfix">
+                          <div class="post-thumbnail">
+                            <img
+                              class="img-fluid"
+                              src="static/proye/images/news/hasbro.png"
+                              alt="post-thumbnail"
+                            />
+                          </div>
+
+                          <div class="post-content">
+                            <h2 class="post-title title-sm">
+                              <a href="single-post.html">Hasbro</a>
+                            </h2>
+                          </div>
+                        </div>
+
+                        <div class="post-block-wrapper post-float clearfix">
+                          <div class="post-thumbnail">
+                            <img
+                              class="img-fluid"
+                              src="static/proye/images/news/mattel.png"
+                              alt="post-thumbnail"
+                            />
+                          </div>
+                          <div class="post-content">
+                            <h2 class="post-title title-sm">
+                              <a href="single-post.html">Mattel</a>
+                            </h2>
+                          </div>
+                        </div>
+
+                        <div class="post-block-wrapper post-float clearfix">
+                          <div class="post-thumbnail">
+                            <img
+                              class="img-fluid"
+                              src="static/proye/images/news/mialegria.png"
+                              alt="post-thumbnail"
+                            />
+                          </div>
+
+                          <div class="post-content">
+                            <h2 class="post-title title-sm">
+                              <a href="single-post.html">Mi Alegria</a>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="block">
+                      <h3 class="news-title">
+                        <span>.</span>
+                      </h3>
+
+                      <div class="post-list-block">
+                        <div class="post-block-wrapper post-float clearfix">
+                          <div class="post-thumbnail">
+                            <img
+                              class="img-fluid"
+                              src="static/proye/images/news/fotorama.jpg"
+                              alt="post-thumbnail"
+                            />
+                          </div>
+
+                          <div class="post-content">
+                            <h2 class="post-title title-sm">
+                              <a href="single-post.html">Fotorama</a>
+                            </h2>
+                          </div>
+                        </div>
+
+                        <div class="post-block-wrapper post-float clearfix">
+                          <div class="post-thumbnail">
+                            <img
+                              class="img-fluid"
+                              src="static/proye/images/news/ikea.png"
+                              alt="post-thumbnail"
+                            />
+                          </div>
+
+                          <div class="post-content">
+                            <h2 class="post-title title-sm">
+                              <a href="single-post.html">Ikea</a>
+                            </h2>
+                          </div>
+                        </div>
+
+                        <div class="post-block-wrapper post-float clearfix">
+                          <div class="post-thumbnail">
+                            <img
+                              class="img-fluid"
+                              src="static/proye/images/news/wizard.jpg"
+                              alt="post-thumbnail"
+                            />
+                          </div>
+
+                          <div class="post-content">
+                            <h2 class="post-title title-sm">
+                              <a href="single-post.html">Wizards</a>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                    <div class="block">
+                      <h3 class="news-title">
+                        <span>.</span>
+                      </h3>
+
+                      <div class="post-list-block">
+                        <div class="post-block-wrapper post-float clearfix">
+                          <div class="post-thumbnail">
+                            <img
+                              class="img-fluid"
+                              src="static/proye/images/news/blanca.jpg"
+                              alt="post-thumbnail"
+                            />
+                          </div>
+
+                          <div class="post-content">
+                            <h2 class="post-title title-sm">
+                              <a href="single-post.html">Blanca</a>
+                            </h2>
+                          </div>
+                        </div>
+
+                        <div class="post-block-wrapper post-float clearfix">
+                          <div class="post-thumbnail">
+                            <img
+                              class="img-fluid"
+                              src="static/proye/images/news/artesanal.jpg"
+                              alt="post-thumbnail"
+                            />
+                          </div>
+
+                          <div class="post-content">
+                            <h2 class="post-title title-sm">
+                              <a href="single-post.html">Artesanal</a>
+                            </h2>
+                          </div>
+                        </div>
+
+                        <div class="post-block-wrapper post-float clearfix">
+                          <div class="post-thumbnail">
+                            <img
+                              class="img-fluid"
+                              src="static/proye/images/news/especial.jpg"
+                              alt="post-thumbnail"
+                            />
+                          </div>
+
+                          <div class="post-content">
+                            <h2 class="post-title title-sm">
+                              <a href="single-post.html">Especial</a>
+                            </h2>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-lg-4 col-md-8 col-sm-12 col-xs-12">
+            <div class="sidebar sidebar-right">
+              <div class="widget">
+                <h3 class="news-title">
+                  <span>Top Productos</span>
+                </h3>
+                <div class="post-list-block">
+                  <div class="review-post-list">
+                    <div class="top-author">
+                      <img
+                        src="static/proye/images/news/marimba.jpg"
+                        alt="author-thumb"
+                      />
+                      <div class="info">
+                        <h4 class="name">
+                          <a href="{%url 'Producto'%}">Marimba Infantil</a>
+                        </h4>
+                        <ul class="list-unstyled">
+                          <li>1 - 5 años</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="top-author">
+                      <img
+                        src="static/proye/images/news/madera.jpg"
+                        alt="author-thumb"
+                      />
+                      <div class="info">
+                        <h4 class="name">
+                          <a href="{%url 'Producto'%}">Rompecabezas de madera</a>
+                        </h4>
+                        <ul class="list-unstyled">
+                          <li>5 - 8 años</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="top-author">
+                      <img
+                        src="static/proye/images/news/rubik.jpg"
+                        alt="author-thumb"
+                      />
+                      <div class="info">
+                        <h4 class="name">
+                          <a href="{%url 'Producto'%}">Cubo Rubik</a>
+                        </h4>
+                        <ul class="list-unstyled">
+                          <li>10 - 12 años</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="top-author">
+                      <img
+                        src="static/proye/images/news/fidgetspiner.jpg"
+                        alt="author-thumb"
+                      />
+                      <div class="info">
+                        <h4 class="name"><a href="{%url 'Producto'%}">FidgetSpinner</a></h4>
+                        <ul class="list-unstyled">
+                          <li>14 años o más</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+{%endblock%}
+</body>
+</html>

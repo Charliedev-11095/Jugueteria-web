@@ -11,3 +11,9 @@ def filtrado(request):
 
 def contacto(request):
     return render(request,"proye/contacto.html")
+
+def secion(request):
+    return render(request,"proye/inicioreg.html")
+
+def reg(request):
+    return render(request,"proye/inciosesion.html")

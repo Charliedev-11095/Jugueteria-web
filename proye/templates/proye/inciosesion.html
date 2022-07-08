@@ -1,0 +1,46 @@
+{% extends "proye/plantilla.html" %}
+{%block body%}
+<section class="login-signup section-padding">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-7">
+                <div class="signup">
+                    <div class="text-center"><a href="index.html"><img src="images/logos/logo.png" alt="" class="img-fluid"></a></div>
+                    <h3 class="mt-4">Registrate</h3>
+                    <p class="mb-5">Para que la divercion no termine</p>
+                    <form action="#" class="signup-form row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="f-name">Nombre</label>
+                                <input type="text" class="form-control" id="f-name" name="f-name" placeholder="Nombre">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="l-name">Apellido</label>
+                                <input type="text" id="l-name" name="l-name" class="form-control" placeholder="Apellido">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="email-address">Correo</label>
+                                <input type="email" class="form-control" name="email-address" id="email-address" placeholder="Pon un Correo Valido">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="password-s">Password</label>
+                                <input type="password" class="form-control" id="password-s" name="password-s" placeholder="Un fuerte password">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn btn-primary" type="submit">Registrate</button>
+                            <p class="mt-5 mb-0">Ya lo hiciste <a href="{% url 'Secion' %}">inicia Secion</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+{%endblock%}

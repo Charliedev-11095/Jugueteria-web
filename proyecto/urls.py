@@ -24,7 +24,9 @@ urlpatterns = [
     path('',views_proyecto.proyecto, name="Principal"),
     path('producto/',views_proyecto.producto, name="Producto"),
     path('filtrado/',views_proyecto.filtrado, name="Filtros"),
-    path('contacto/',views_proyecto.contacto, name="Contacto")
+    path('contacto/',views_proyecto.contacto, name="Contacto"),
+    path('singin/',views_proyecto.secion, name="Secion"),
+    path('singinr/',views_proyecto.reg, name="Registrar"),
 ]
 
 if settings.DEBUG:
